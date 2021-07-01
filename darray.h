@@ -8,12 +8,12 @@ typedef unsigned char byte;
 
 typedef struct
 {
-	size_t element_size;
+	byte element_size;
 	unsigned int length;
 	byte* array; // array of bytes, grouped by defined size of the storing type
 } darray;
 
-void dar_init(darray* dar, size_t element_size);
+void dar_init(darray* dar, byte element_size);
 void dar_free(darray* dar);
 void dar_resize(darray* dar, unsigned int new_length);
 
