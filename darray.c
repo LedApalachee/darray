@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 
-void dar_init(darray* dar, byte element_size)
+void dar_init(darray* dar, size_t element_size)
 {
 	dar->element_size = element_size;
 	dar->length = 0;
