@@ -1,6 +1,5 @@
 #include "darray.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 
 void dar_init(darray* dar, byte element_size)
