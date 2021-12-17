@@ -10,7 +10,7 @@ typedef struct
 {
 	byte element_size;
 	unsigned int length;
-	byte* array; // array of bytes, grouped by defined size of the storing type
+	byte* array; // array of bytes, grouped by defined size of the stored type
 } darray;
 
 void dar_init(darray* dar, byte element_size);
