@@ -34,6 +34,7 @@ void dar_push_arr(darray* dar, const byte* array, int arr_length);
 #define DAR_GET(type_name, pointer_to_a_darray, position) ((type_name*)dar_get(pointer_to_a_darray, position))
 #define DAR_PULL(type_name, pointer_to_a_darray) ((type_name*)dar_pull(pointer_to_a_darray))
 #define DAR_SET(type_name, pointer_to_a_darray, position, value) (dar_set(pointer_to_a_darray, position, (byte*)&(value)))
+#define DAR_INSERT(type_name, pointer_to_a_darray, position, value) (dar_insert(pointer_to_a_darray, position, (byte*)&(value)))
 #define DAR_PUSH(type_name, pointer_to_a_darray, value) (dar_push(pointer_to_a_darray, (byte*)&(value)))
 
 /* example of usage:
